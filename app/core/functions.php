@@ -2,5 +2,7 @@
 
 function show($data)
 {
-  echo "<"
+  echo "<pre>";
+  print_r($data);
+  echo "</pre>";
 }
