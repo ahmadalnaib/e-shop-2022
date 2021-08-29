@@ -57,7 +57,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index"><img src="<?php echo ASSETS?>images/home/logo.png" alt="" /></a>
+							<a href="<?=ROOT ?>index"><img src="<?php echo ASSETS?>images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -90,7 +90,7 @@
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.php"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="<?=ROOT?>login"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
