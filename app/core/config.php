@@ -6,6 +6,7 @@ define('DB_USER',"root");
 define('DB_PASS',"");
 
 
+
 define('DEBUG',true);
 
 if(DEBUG){
