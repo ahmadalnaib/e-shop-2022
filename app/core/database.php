@@ -21,8 +21,31 @@ class Database
       return self::$con;
     } 
     
-    $a=new self();
-    return self::$con;
+    return $instance=new self();
+
+  }
+
+
+  //read
+  public function read($query,$data=array())
+  {
+    $stm=self::$con->prepare($query);
+    $result=$stm->execute();
+
+    if($result)
+    {
+    $data=$stm->fetchAll(PDO::FETCH_OBJ);
+    if(is_array($data))
+    {
+      return $data;
+    }
+  }
+    return false;
+
+  }
+  //write
+  public function write($query,$date=array())
+  {
 
   }
 
@@ -31,3 +54,5 @@ class Database
 
 
 $db= Database::getInstance();
+$data=$db->read("describe users");
+show($data);
